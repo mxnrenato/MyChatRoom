@@ -42,13 +42,13 @@
     })
 
     connection.on("ReceiveMessage", (user, message) => {
-        var message = "<div><b>" + user + " dijo:</b>" + message + "</div";
+        var message = "<div><b>" + user + " dijo:</b> \n" + message + "</div> \n";
         document.getElementById("messages").innerHTML = message + document.getElementById("messages").innerHTML;
     })
 
-    connection.on("ShowWho", (message) => {
-        var message = "<div><b>" + user + " dijo:</b>" + message + "</div";
-        document.getElementById("notifications").innerHTML = message + document.getElementById("notifications").innerHTML;
-    })
+    //connection.on("ShowWho", (message) => {
+        //var message = "<div><b>" + user + " dijo:</b>" + message + "</div";
+        //document.getElementById("notifications").innerHTML = message + document.getElementById("notifications").innerHTML;
+    //})
 
 </script>
